@@ -2,5 +2,21 @@
     <string name="app_name">SHUTA</string>
     <string name="Open">open</string>
     <string name="Close">close</string>
+    <string name="registilation_number">Registilation Number</string>
+    <string name="password">password</string>
+    <string name="loging">Loging</string>
+    <string name="create_account">create account</string>
+    <string name="staff_register">Staff Register</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="e_mial">E-mial</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="derpatment">Derpatment</string>
+    <string name="register">Register</string>
+    <string name="register1">Register</string>
+    <string name="enter_password1">Enter Password</string>
+    <string name="derpatment1">Derpatment</string>
+    <string name="name">Name</string>
 
 </resources>
