@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/Login"
-        android:title="Login"></item>
+        android:id="@+id/course"
+        android:title="course"></item>
+
     <item
-        android:id="@+id/Register"
-        android:title="Register"></item>
+        android:id="@+id/OptionalCourse"
+        android:title="OptionalCourse"></item>
+    <item
+        android:id="@+id/timetable"
+        android:title="timetable"></item>
+
     <item
         android:id="@+id/About"
         android:title="About"></item>
+     <item
+        android:id="@+id/result"
+        android:title="result"></item>
 
 </menu>

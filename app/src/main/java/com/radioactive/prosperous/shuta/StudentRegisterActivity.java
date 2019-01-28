@@ -10,12 +10,13 @@ import android.widget.Toast;
 public class StudentRegisterActivity extends AppCompatActivity {
 
     studentDatabase mydb;
+    EditText regno;
     EditText fname;
     EditText Mname;
     EditText lname;
     EditText passowrd;
-    EditText Email;
-    EditText Department;
+
+
 
 
     @Override
@@ -25,41 +26,42 @@ public class StudentRegisterActivity extends AppCompatActivity {
 // linking the shuta database and the  register class
         mydb= new studentDatabase(this);
 
+        regno= (EditText)findViewById(R.id.regno);
         fname= (EditText)findViewById(R.id.Fname);
         Mname= (EditText)findViewById(R.id.Sname);
         lname= (EditText)findViewById(R.id.Lname);
         passowrd= (EditText)findViewById(R.id.pwd);
-        Email= (EditText)findViewById(R.id.email);
-        Department= (EditText)findViewById(R.id.dpt);
+
+
 
     }
 // register button
 
     public void Register(View view) {
+        String reg = regno.getText().toString();
         String firstname = fname.getText().toString();
         String secname = Mname.getText().toString();
         String lastname = lname.getText().toString();
-        String email = Email.getText().toString();
         String pwd = passowrd.getText().toString();
-        String dpartment = Department.getText().toString();
+
 
         if (
-                firstname.isEmpty()
-                        || secname.isEmpty()
-                        || lastname.isEmpty()
-                        || pwd.isEmpty()
-                        || email.isEmpty()
-                        || dpartment.isEmpty()
-        )
+                reg.equals("")
+                        || firstname.equals("")
+                        || secname.equals("")
+                        || lastname.equals("")
+                        || pwd.equals("")
+
+                      )
         {
             Toast.makeText(this, "Fill the Empty Space", Toast.LENGTH_SHORT).show();
         }
         else {
-            boolean isInserted = mydb.insertData(firstname, secname, lastname, pwd, email, dpartment);
+            boolean isInserted = mydb.insertData(reg,firstname, secname, lastname, pwd);
 
             if (isInserted == true)
             {
-                Intent intent = new Intent(this, LoginActivity.class);
+                Intent intent = new Intent(this,LoginActivity.class);
                 startActivity(intent);
             }
             else
