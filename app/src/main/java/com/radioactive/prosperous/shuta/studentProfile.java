@@ -1,5 +1,6 @@
 package com.radioactive.prosperous.shuta;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
@@ -35,8 +36,8 @@ public class studentProfile extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 int id = menuItem.getItemId();
                 if (id == R.id.course){
-                    Toast.makeText(studentProfile.this, "Student'sProfile",Toast.LENGTH_SHORT).show();
-                }
+                    Intent intent = new Intent(studentProfile.this, student_Courses.class);
+                    startActivity(intent); }
                 else if (id == R.id.OptionalCourse) {
                     Toast.makeText(studentProfile.this, "Registered", Toast.LENGTH_SHORT).show();
                 }
