@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".students_timetable"></activity>
+        <activity android:name=".student_Timetable" />
+        <activity android:name=".Shuta_About" />
+        <activity android:name=".student_OptionalCourse" />
         <activity android:name=".student_Results" />
         <activity android:name=".student_Courses" />
         <activity android:name=".StaffProfile" />

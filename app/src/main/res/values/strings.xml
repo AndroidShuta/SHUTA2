@@ -34,7 +34,20 @@
     <string name="student">student</string>
     <string name="staff_id">Staff ID</string>
     <string name="login">Login</string>
-    <string name="welcome_to_your_string_profile">Welcome to your @string/profile</string>
-
+    <string name="Description">The Shule Tanzania System (SHTUA) holds all the information relating to staff and their student.\n<b>What does SHUTA do? </b>\n  SHUTA allows Staff and Students of your organisation to manage their management tasks online.<b>\n Here is an example of what SHUTA can do </b> \n <i>Students</i> \n\t Register for Courses online \n\t View Course Progress and Results \n\n <i>Teaching Staff</i> \n\t View list of Students per Course Publish Course Results \n\t Track Students Progress \n\n <i>Other</i> \n\t many more.</string>
+    <string name="code">CODE</string>
+    <string name="is_238">IS 238</string>
+    <string name="computer_network_design_and_administration">Computer Network Design and Administration</string>
+    <string name="data_abstraction_and_algorithms">Data Abstraction and Algorithms</string>
+    <string name="mobile_application_development">Mobile Application Development</string>
+    <string name="is_246">IS 246</string>
+    <string name="is_264">IS 264</string>
+    <string name="cs_243">CS 243</string>
+    <string name="title">TITLE</string>
+    <string name="practical_training_i">Practical Training I</string>
+    <string name="is_243">IS 243</string>
+    <string name="principles_of_computer_graphics">Principles of Computer Graphics</string>
+    <string name="is_274">IS 274</string>
+    <string name="principles_of_database_systems">Principles of Database Systems</string>
 
 </resources>

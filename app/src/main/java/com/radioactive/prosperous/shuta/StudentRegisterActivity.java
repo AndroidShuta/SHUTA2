@@ -30,7 +30,7 @@ public class StudentRegisterActivity extends AppCompatActivity {
         fname= (EditText)findViewById(R.id.Fname);
         Mname= (EditText)findViewById(R.id.Sname);
         lname= (EditText)findViewById(R.id.Lname);
-        passowrd= (EditText)findViewById(R.id.pwd);
+        passowrd= (EditText) findViewById(R.id.pwd);
 
 
 

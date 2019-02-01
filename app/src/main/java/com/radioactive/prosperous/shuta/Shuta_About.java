@@ -10,7 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
-public class student_Courses extends AppCompatActivity {
+public class Shuta_About extends AppCompatActivity {
     private DrawerLayout dl;
     private ActionBarDrawerToggle abdt;
 
@@ -18,7 +18,7 @@ public class student_Courses extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_student__courses);
+        setContentView(R.layout.activity_shuta__about);
 
         dl = findViewById(R.id.dl);
         abdt = new ActionBarDrawerToggle(this,dl,R.string.Open,R.string.Close);
@@ -51,10 +51,6 @@ public class student_Courses extends AppCompatActivity {
                 else if (id == R.id.About) {
                     Intent intent = new Intent(getApplicationContext(),Shuta_About.class);
                     startActivity(intent);}
-                else if(id == R.id.Logout){
-                    Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
-                    startActivity(intent);
-                }
 
                 return true;
             }
