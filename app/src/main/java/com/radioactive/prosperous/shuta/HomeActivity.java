@@ -35,10 +35,10 @@ public class HomeActivity extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
             int id = menuItem.getItemId();
-            if (id == R.id.Login){
+            if (id == R.id.course){
                 Toast.makeText(HomeActivity.this, "Student'sProfile",Toast.LENGTH_SHORT).show();
             }
-            else if (id == R.id.Register) {
+            else if (id == R.id.OptionalCourse) {
                 Toast.makeText(HomeActivity.this, "Registered", Toast.LENGTH_SHORT).show();
             }
             else if (id == R.id.About) {
