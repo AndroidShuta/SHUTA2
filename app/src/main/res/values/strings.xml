@@ -49,5 +49,8 @@
     <string name="principles_of_computer_graphics">Principles of Computer Graphics</string>
     <string name="is_274">IS 274</string>
     <string name="principles_of_database_systems">Principles of Database Systems</string>
+    <string name="student_id">student ID</string>
+    <string name="todo">TODO</string>
+    <string name="shuta">SHUTA</string>
 
 </resources>

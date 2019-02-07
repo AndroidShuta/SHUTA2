@@ -17,9 +17,6 @@
      <item
         android:id="@+id/About"
         android:title="About"></item>
-
-
-
     <item
         android:id="@+id/Logout"
         android:title="Logout"></item>

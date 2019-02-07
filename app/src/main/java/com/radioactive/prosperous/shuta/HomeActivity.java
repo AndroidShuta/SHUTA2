@@ -55,6 +55,7 @@ public class HomeActivity extends AppCompatActivity {
         if (abdt.onOptionsItemSelected(item)){
             return true;
         }
+
         return super.onOptionsItemSelected(item);
     }
 

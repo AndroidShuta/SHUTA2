@@ -22,7 +22,7 @@ public class StudentRegisterActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_student_register);
+        setContentView(R.layout.studentregister);
 // linking the shuta database and the  register class
         mydb= new studentDatabase(this);
 
