@@ -1,4 +1,4 @@
-package com.radioactive.prosperous.shuta;
+package com.radioactive.prosperous.shuta.helper;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -8,11 +8,11 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 
 
-public class studentDatabase extends SQLiteOpenHelper {
-    public static final String DATABASE_NAME="Studentdb";
-    public static final String DATABASE_TABLE="Students_table";
+public class AdminDatabase extends SQLiteOpenHelper {
+    public static final String DATABASE_NAME="Admin_db";
+    public static final String DATABASE_TABLE="admin_table";
 
-    public static final String col_1="Regislation_Number";
+    public static final String col_1="admin_id";
     public static final String col_2="FirstName";
     public static final String col_3="MiddleName";
     public static final String col_4="LastName";
@@ -20,7 +20,7 @@ public class studentDatabase extends SQLiteOpenHelper {
 
 
 
-    public studentDatabase(Context context) {
+    public AdminDatabase(Context context) {
         super(context, DATABASE_NAME, null, 1);
 
     }
@@ -28,7 +28,7 @@ public class studentDatabase extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("create table " + DATABASE_TABLE +"  (" +
-                "Regislation_Number TEXT PRIMARY KEY NOT NULL," +
+                "admin_id TEXT PRIMARY KEY NOT NULL," +
                 "FirstName TEXT NOT NULL," +
                 "MiddleName TEXT NOT NULL," +
                 "LastName TEXT NOT NULL," +
@@ -41,13 +41,13 @@ public class studentDatabase extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public boolean insertData(String regno,String fName,String sName, String lName,String pwd)
+    public boolean addAdmin(String id,String fName,String sName, String lName,String pwd)
     {
         SQLiteDatabase db= this.getWritableDatabase();
 
         ContentValues value = new ContentValues();
 
-        value.put(col_1,regno);
+        value.put(col_1,id);
         value.put(col_2,fName);
         value.put(col_3,sName);
         value.put(col_4,lName);
@@ -66,10 +66,10 @@ public class studentDatabase extends SQLiteOpenHelper {
         Cursor res = db.rawQuery("select * from "+ DATABASE_TABLE,null);
         return res;
     }
-    public  boolean verfing(String id, String password)
+    public  boolean verifyAdmin(String id, String password)
     {   SQLiteDatabase db= this.getReadableDatabase();
         Cursor cursor = db.rawQuery(" select * from "+DATABASE_TABLE+" where "+col_1+"=? and " +col_5 +"=? ", new String[]{id, password});
         if(cursor.getCount() > 0) {return  true;}
         else{return false;}
-       }
+    }
 }

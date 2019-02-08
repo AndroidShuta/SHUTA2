@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.radioactive.prosperous.shuta.helper.StaffDataBaseHelper;
+
 public class StaffRegister extends AppCompatActivity {
     EditText e1,e2,e3;
     Button b1;

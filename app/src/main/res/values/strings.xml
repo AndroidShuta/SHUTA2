@@ -2,15 +2,15 @@
     <string name="app_name">SHUTA</string>
     <string name="Open">open</string>
     <string name="Close">close</string>
-    <string name="registilation_number">Registilation Number</string>
-    <string name="password">password</string>
+    <string name="registration_number">Registration Number</string>
+    <string name="password">Password</string>
     <string name="loging">Loging</string>
-    <string name="create_account">create account</string>
+    <string name="create_account">Create New Account</string>
     <string name="register_staff">Staff Register</string>
     <string name="middle_name">Middle Name</string>
     <string name="last_name">Last Name</string>
     <string name="first_name">First Name</string>
-    <string name="e_mial">E-mial</string>
+    <string name="e_mial">E-mail</string>
     <string name="enter_password">Enter Password</string>
     <string name="derpatment">Derpatment</string>
     <string name="register">Register</string>
@@ -23,11 +23,11 @@
     <string name="staff_login">Staff Login</string>
     <string name="staff_register">Staff Register</string>
     <string name="staff_profile">Staff Profile</string>
-    <string name="courses">courses</string>
+    <string name="courses">Courses</string>
     <string name="time_table">Time Table</string>
     <string name="optional_courses">Optional courses</string>
     <string name="result">Result</string>
-    <string name="logout">logout</string>
+    <string name="logout">Logout</string>
     <string name="welcome_to_shuta">welcome to Shuta</string>
     <string name="enter_email">Enter Email</string>
     <string name="staff">Staff</string>
@@ -35,6 +35,20 @@
     <string name="staff_id">Staff ID</string>
     <string name="login">Login</string>
     <string name="welcome_to_your_string_profile">Welcome to your @string/profile</string>
+    <string name="staff_admin">Staff or Admin?</string>
+    <string name="admin_login">Admin Login</string>
+    <string name="admin_id">Admin ID</string>
+    <string name="student_id">Student ID</string>
+    <string name="add_student">Add Student</string>
+    <string name="change_timetable">Change Timetable</string>
+    <string name="edit_timetable">Edit Timetable</string>
+    <string name="yr_form">Year/Form</string>
+    <string name="course_id">Course ID</string>
+    <string name="course_name">Course Name</string>
+    <string name="course_yr">Course Year</string>
+    <string name="course_staff">Course Staff</string>
+    <string name="course_desc">Course Description</string>
+    <string name="add_course">ADD COURSE</string>
 
 
 </resources>

@@ -8,8 +8,15 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".students_timetable"></activity>
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".AdminAddCourse"></activity>
+        <activity android:name=".StaffCourse" />
+        <activity android:name=".AdminRegistration" />
+        <activity android:name=".AdminHome" />
+        <activity android:name=".AdminLogin" />
+        <activity android:name=".StudentHome" />
+        <activity android:name=".StaffHome" />
+        <activity android:name=".students_timetable" />
         <activity android:name=".student_Results" />
         <activity android:name=".student_Courses" />
         <activity android:name=".StaffProfile" />

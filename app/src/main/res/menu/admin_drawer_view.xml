@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/add_student"
+            android:title="@string/add_student" />
+        <item
+            android:id="@+id/add_course"
+            android:title="Add Course" />
+        <item
+            android:id="@+id/edit_titmetable"
+            android:title="@string/edit_timetable" />
+    </group>
+</menu>

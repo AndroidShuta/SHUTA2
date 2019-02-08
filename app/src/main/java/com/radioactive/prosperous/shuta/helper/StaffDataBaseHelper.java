@@ -1,4 +1,4 @@
-package com.radioactive.prosperous.shuta;
+package com.radioactive.prosperous.shuta.helper;
 
 import android.content.ContentValues;
 import android.content.Context;
