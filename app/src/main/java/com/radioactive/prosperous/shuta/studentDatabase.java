@@ -60,16 +60,36 @@ public class studentDatabase extends SQLiteOpenHelper {
         else
             return true;
     }
-    public Cursor getAllData()
-    {
-        SQLiteDatabase db= this.getWritableDatabase();
-        Cursor res = db.rawQuery("select * from "+ DATABASE_TABLE,null);
-        return res;
-    }
+
     public  boolean verfing(String id, String password)
     {   SQLiteDatabase db= this.getReadableDatabase();
-        Cursor cursor = db.rawQuery(" select * from "+DATABASE_TABLE+" where "+col_1+"=? and " +col_5 +"=? ", new String[]{id, password});
-        if(cursor.getCount() > 0) {return  true;}
-        else{return false;}
-       }
+        Cursor cursor = db.rawQuery(" select * FROM "+ DATABASE_TABLE+" where " +col_1 + "=? " +" and " +col_5+ "=? ", new String[]{id, password});
+        if (cursor.getCount() > 0) {
+            return true;
+        }
+        return false;
+    }
+
+    public Cursor getAllData() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor res = db.rawQuery("select * from "+DATABASE_TABLE,null);
+        return res;
+    }
+
+    public boolean updateData(String regno,String fName,String sName, String lName,String pwd) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues value = new ContentValues();
+        value.put(col_1,regno);
+        value.put(col_2,fName);
+        value.put(col_3,sName);
+        value.put(col_4,lName);
+        value.put(col_5,pwd);
+        db.update(DATABASE_TABLE,value, "regno = ?",new String[] { regno });
+        return true;
+    }
+
+    public Integer deleteData (String regno) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        return db.delete(DATABASE_TABLE, "regno = ?",new String[] {regno});
+    }
 }

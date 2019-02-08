@@ -1,6 +1,7 @@
 package com.radioactive.prosperous.shuta;
 
 import android.content.Intent;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
@@ -9,9 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
-
 public class studentProfile extends AppCompatActivity {
-    private DrawerLayout dl2;
+    private DrawerLayout dl;
     private ActionBarDrawerToggle abdt;
 
 
@@ -19,13 +19,14 @@ public class studentProfile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_profile);
-        dl2 =(DrawerLayout)findViewById(R.id.dl2);
-        abdt = new ActionBarDrawerToggle(this,dl2,R.string.Open,R.string.Close);
+
+        dl = findViewById(R.id.dl);
+        abdt = new ActionBarDrawerToggle(this,dl,R.string.Open,R.string.Close);
         abdt.setDrawerIndicatorEnabled(true);
 
 
 
-        dl2.addDrawerListener(abdt);
+        dl.addDrawerListener(abdt);
         abdt.syncState();
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -36,18 +37,31 @@ public class studentProfile extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 int id = menuItem.getItemId();
                 if (id == R.id.course){
-                    Intent intent = new Intent(studentProfile.this, student_Courses.class);
-                    startActivity(intent); }
+                    Intent intent = new Intent(getApplicationContext(),student_Courses.class);
+                    startActivity(intent);}
                 else if (id == R.id.OptionalCourse) {
-                    Toast.makeText(studentProfile.this, "Registered", Toast.LENGTH_SHORT).show();
-                }
+                    Intent intent = new Intent(getApplicationContext(),student_OptionalCourse.class);
+                    startActivity(intent);}
+                else if (id == R.id.result) {
+                    Intent intent = new Intent(getApplicationContext(),student_Results.class);
+                    startActivity(intent);}
+                else if (id == R.id.timetable) {
+                    Intent intent = new Intent(getApplicationContext(),student_Timetable.class);
+                    startActivity(intent);}
                 else if (id == R.id.About) {
-                    Toast.makeText(studentProfile.this, "about", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(getApplicationContext(),Shuta_About.class);
+                    startActivity(intent);
                 }
+                else if(id == R.id.Logout){
+                    Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
+                    startActivity(intent);
+                }
+
                 return true;
             }
-        }); }
+        });
 
+    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -56,4 +70,7 @@ public class studentProfile extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
 }
+

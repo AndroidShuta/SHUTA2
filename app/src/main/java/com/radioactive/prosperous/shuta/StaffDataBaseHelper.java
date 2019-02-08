@@ -47,5 +47,11 @@ public class StaffDataBaseHelper extends SQLiteOpenHelper {
         return false;
     }
 
+    public Cursor getAllData() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor res = db.rawQuery("select * from staffMembers",null);
+        return res;
+    }
+
 
     }

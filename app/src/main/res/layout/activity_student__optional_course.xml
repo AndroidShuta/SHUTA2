@@ -11,27 +11,9 @@
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:context=".student_OptionalCourse">
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="63dp"
-            android:layout_height="27dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="180dp"
-            android:layout_marginRight="180dp"
-            android:layout_marginBottom="192dp"
-            android:text="@string/courses"
-            android:textSize="15sp"
-            android:textStyle="italic"
-            app:layout_constraintBottom_toTopOf="@+id/tableLayout"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.177" tools:targetApi="p"/>
 
         <TableLayout
             android:id="@+id/tableLayout"
@@ -50,7 +32,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.882">
-
 
             <TableRow
                 android:layout_width="match_parent"
@@ -75,78 +56,23 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="54dp"
+                tools:layout_editor_absoluteY="64dp">
 
                 <TextView
-                    android:id="@+id/r2col1"
+                    android:id="@+id/r8col1"
                     android:layout_width="107dp"
                     android:layout_height="match_parent"
                     android:layout_column="1"
-                    android:text="@string/cs_243" />
+                    android:text="@string/is_274" />
 
                 <TextView
-                    android:id="@+id/r2col2"
+                    android:id="@+id/r8col2"
                     android:layout_width="307dp"
                     android:layout_height="47dp"
                     android:layout_column="2"
-                    android:text="@string/computer_network_design_and_administration" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/r4col1"
-                    android:layout_width="107dp"
-                    android:layout_height="match_parent"
-                    android:layout_column="1"
-                    android:text="@string/is_238" />
-
-                <TextView
-                    android:id="@+id/r4col2"
-                    android:layout_width="307dp"
-                    android:layout_height="47dp"
-                    android:layout_column="2"
-                    android:text="@string/data_abstraction_and_algorithms" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/r5col1"
-                    android:layout_width="107dp"
-                    android:layout_height="match_parent"
-                    android:layout_column="1"
-                    android:text="@string/is_243" />
-
-                <TextView
-                    android:id="@+id/r5col2"
-                    android:layout_width="307dp"
-                    android:layout_height="47dp"
-                    android:layout_column="2"
-                    android:text="@string/mobile_application_development" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/r6col1"
-                    android:layout_width="107dp"
-                    android:layout_height="match_parent"
-                    android:layout_column="1"
-                    android:text="@string/is_246" />
-
-                <TextView
-                    android:id="@+id/r6col2"
-                    android:layout_width="307dp"
-                    android:layout_height="47dp"
-                    android:layout_column="2"
-                    android:text="@string/practical_training_i" />
+                    android:text="@string/principles_of_database_systems" />
             </TableRow>
 
             <TableRow
@@ -173,21 +99,97 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/r8col1"
+                    android:id="@+id/r6col1"
                     android:layout_width="107dp"
                     android:layout_height="match_parent"
                     android:layout_column="1"
-                    android:text="@string/is_274" />
+                    android:text="@string/is_246" />
 
                 <TextView
-                    android:id="@+id/r8col2"
+                    android:id="@+id/r6col2"
                     android:layout_width="307dp"
                     android:layout_height="47dp"
                     android:layout_column="2"
-                    android:text="@string/principles_of_database_systems" />
+                    android:text="@string/practical_training_i" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/r5col1"
+                    android:layout_width="107dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:text="@string/is_243" />
+
+                <TextView
+                    android:id="@+id/r5col2"
+                    android:layout_width="307dp"
+                    android:layout_height="47dp"
+                    android:layout_column="2"
+                    android:text="@string/mobile_application_development" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/r4col1"
+                    android:layout_width="107dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:text="@string/is_238" />
+
+                <TextView
+                    android:id="@+id/r4col2"
+                    android:layout_width="307dp"
+                    android:layout_height="47dp"
+                    android:layout_column="2"
+                    android:text="@string/data_abstraction_and_algorithms" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/r2col1"
+                    android:layout_width="107dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:text="@string/cs_243" />
+
+                <TextView
+                    android:id="@+id/r2col2"
+                    android:layout_width="307dp"
+                    android:layout_height="47dp"
+                    android:layout_column="2"
+                    android:text="@string/computer_network_design_and_administration" />
             </TableRow>
 
         </TableLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="132dp"
+            android:text="@string/optional_courses"
+            app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
     </android.support.constraint.ConstraintLayout>
 
     <android.support.design.widget.NavigationView
@@ -199,7 +201,6 @@
         app:headerLayout="@layout/navigation_header"
         app:itemIconTint="@color/darkgray"
         app:itemTextColor="@color/darkgray"
-        app:menu="@menu/navigation_menu">
-    </android.support.design.widget.NavigationView>
+        app:menu="@menu/navigation_menu"></android.support.design.widget.NavigationView>
 
 </android.support.v4.widget.DrawerLayout>

@@ -19,7 +19,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-    dl =(DrawerLayout)findViewById(R.id.dl);
+    dl = findViewById(R.id.dl);
     abdt = new ActionBarDrawerToggle(this,dl,R.string.Open,R.string.Close);
      abdt.setDrawerIndicatorEnabled(true);
 
@@ -55,6 +55,7 @@ public class HomeActivity extends AppCompatActivity {
         if (abdt.onOptionsItemSelected(item)){
             return true;
         }
+
         return super.onOptionsItemSelected(item);
     }
 

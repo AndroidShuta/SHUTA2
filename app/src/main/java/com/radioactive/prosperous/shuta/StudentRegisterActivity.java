@@ -22,7 +22,7 @@ public class StudentRegisterActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_student_register);
+        setContentView(R.layout.studentregister);
 // linking the shuta database and the  register class
         mydb= new studentDatabase(this);
 
@@ -30,7 +30,7 @@ public class StudentRegisterActivity extends AppCompatActivity {
         fname= (EditText)findViewById(R.id.Fname);
         Mname= (EditText)findViewById(R.id.Sname);
         lname= (EditText)findViewById(R.id.Lname);
-        passowrd= (EditText)findViewById(R.id.pwd);
+        passowrd= (EditText) findViewById(R.id.pwd);
 
 
 
