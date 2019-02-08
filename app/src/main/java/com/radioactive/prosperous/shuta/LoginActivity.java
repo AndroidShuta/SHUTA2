@@ -62,7 +62,8 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
                 return true;
             case R.id.admin:
-                Toast.makeText(getApplicationContext(),"about", Toast.LENGTH_LONG).show();
+                Intent intent1 = new Intent(this, Admin.class);
+                startActivity(intent1);
                 return true;
                 default:
                     return super.onOptionsItemSelected(item);
