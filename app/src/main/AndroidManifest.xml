@@ -9,7 +9,10 @@
         android:roundIcon="@drawable/shuta"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Admin"></activity>
+        <activity android:name=".AdminHome"></activity>
+        <activity android:name=".StaffCourses" />
+        <activity android:name=".AdminLogin" />
+        <activity android:name=".Admin" />
         <activity android:name=".student_Timetable" />
         <activity android:name=".Shuta_About" />
         <activity android:name=".student_OptionalCourse" />
@@ -32,7 +35,7 @@
 
         <receiver android:name=".broadcastRecever">
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
     </application>

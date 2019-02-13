@@ -1,5 +1,7 @@
 package com.radioactive.prosperous.shuta;
 
+import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.support.annotation.NonNull;
@@ -57,12 +59,12 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
-            case R.id.staff:
-                Intent intent = new Intent(this, StaffLogin.class);
+            case R.id.admin:
+                Intent intent = new Intent(this, AdminLogin.class);
                 startActivity(intent);
                 return true;
-            case R.id.admin:
-                Intent intent1 = new Intent(this, Admin.class);
+            case R.id.staff:
+                Intent intent1 = new Intent(this, StaffLogin.class);
                 startActivity(intent1);
                 return true;
                 default:
@@ -98,6 +100,5 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = new Intent(this, StaffLogin.class);
         startActivity(intent);
     }
-
 
 }

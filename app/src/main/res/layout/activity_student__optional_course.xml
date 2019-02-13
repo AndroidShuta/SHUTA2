@@ -52,6 +52,7 @@
                     android:layout_column="2"
                     android:text="@string/title"
                     android:textSize="25sp" />
+
             </TableRow>
 
             <TableRow
@@ -60,6 +61,13 @@
                 tools:layout_editor_absoluteX="54dp"
                 tools:layout_editor_absoluteY="64dp">
 
+
+                <CheckBox
+                    android:id="@+id/chkAndroid6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:checked="true" />
                 <TextView
                     android:id="@+id/r8col1"
                     android:layout_width="107dp"
@@ -73,12 +81,20 @@
                     android:layout_height="47dp"
                     android:layout_column="2"
                     android:text="@string/principles_of_database_systems" />
+
             </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+
+                <CheckBox
+                    android:id="@+id/chkAndroid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:checked="true" />
                 <TextView
                     android:id="@+id/r7col1"
                     android:layout_width="107dp"
@@ -92,12 +108,21 @@
                     android:layout_height="47dp"
                     android:layout_column="2"
                     android:text="@string/principles_of_computer_graphics" />
+
+
             </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+
+                <CheckBox
+                    android:id="@+id/chkAndroid5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:checked="true" />
                 <TextView
                     android:id="@+id/r6col1"
                     android:layout_width="107dp"
@@ -111,12 +136,21 @@
                     android:layout_height="47dp"
                     android:layout_column="2"
                     android:text="@string/practical_training_i" />
+
+
             </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+
+                <CheckBox
+                    android:id="@+id/chkAndroid4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:checked="true" />
                 <TextView
                     android:id="@+id/r5col1"
                     android:layout_width="107dp"
@@ -130,12 +164,20 @@
                     android:layout_height="47dp"
                     android:layout_column="2"
                     android:text="@string/mobile_application_development" />
-            </TableRow>
+
+                </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+
+                <CheckBox
+                    android:id="@+id/chkAndroid3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:checked="true" />
                 <TextView
                     android:id="@+id/r4col1"
                     android:layout_width="107dp"
@@ -149,6 +191,7 @@
                     android:layout_height="47dp"
                     android:layout_column="2"
                     android:text="@string/data_abstraction_and_algorithms" />
+
             </TableRow>
 
             <TableRow
@@ -156,6 +199,13 @@
                 android:layout_height="match_parent"
                 tools:ignore="MissingConstraints">
 
+
+                <CheckBox
+                    android:id="@+id/chkAndroid1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:checked="true" />
                 <TextView
                     android:id="@+id/r2col1"
                     android:layout_width="107dp"
@@ -169,6 +219,13 @@
                     android:layout_height="47dp"
                     android:layout_column="2"
                     android:text="@string/computer_network_design_and_administration" />
+
+                <CheckBox
+                    android:id="@+id/chkAndroid2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:checked="true" />
             </TableRow>
 
         </TableLayout>

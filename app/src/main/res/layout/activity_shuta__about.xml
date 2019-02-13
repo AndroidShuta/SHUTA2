@@ -15,6 +15,16 @@
         tools:context=".Shuta_About">
 
 
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="76dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="184dp"
+            android:layout_marginLeft="184dp"
+            android:layout_marginTop="44dp"
+            android:text="about"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </android.support.constraint.ConstraintLayout>
 
     <android.support.design.widget.NavigationView

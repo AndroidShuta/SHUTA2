@@ -9,10 +9,16 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 import android.widget.Toast;
 public class student_Courses extends AppCompatActivity {
     private DrawerLayout dl;
     private ActionBarDrawerToggle abdt;
+
+    public static String STAFF_ID;
+    Spinner spinStaffCourse;
 
 
     @Override
@@ -20,14 +26,14 @@ public class student_Courses extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student__courses);
 
-        dl = findViewById(R.id.dl);
+     /*   dl = findViewById(R.id.dl);
         abdt = new ActionBarDrawerToggle(this,dl,R.string.Open,R.string.Close);
         abdt.setDrawerIndicatorEnabled(true);
 
+//        STAFF_ID = getIntent().getExtras().getString("staff_id");
 
-
-        dl.addDrawerListener(abdt);
-        abdt.syncState();
+       // dl.addDrawerListener(abdt);
+     //   abdt.syncState();
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -69,6 +75,24 @@ public class student_Courses extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+*/
+
+    }
+    public void addCourse(View view){
+
+
+        CourseDatabase db = new CourseDatabase(student_Courses.this);
+
+        String[] courses = db.getCourse();
+
+        spinStaffCourse = findViewById(R.id.spinnerStaffCourse);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(student_Courses.this, android.R.layout.simple_spinner_dropdown_item,courses);
+        spinStaffCourse.setAdapter(adapter);
+
+        Toast.makeText(getApplicationContext(),"Courses updated", Toast.LENGTH_LONG).show();
+
+    }
+
 
 
 }

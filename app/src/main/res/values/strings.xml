@@ -34,7 +34,7 @@
     <string name="student">student</string>
     <string name="staff_id">Staff ID</string>
     <string name="login">Login</string>
-    <string name="Description">The Shule Tanzania System (SHTUA) holds all the information relating to staff and their student.\n<b>What does SHUTA do? </b>\n  SHUTA allows Staff and Students of your organisation to manage their management tasks online.<b>\n Here is an example of what SHUTA can do </b> \n <i>Students</i> \n\t Register for Courses online \n\t View Course Progress and Results \n\n <i>Teaching Staff</i> \n\t View list of Students per Course Publish Course Results \n\t Track Students Progress \n\n <i>Other</i> \n\t many more.</string>
+    <string name="Description">The Shule Tanzania System (SHTUA) holds all the information relating to staff and their student.\n\n<b>What does SHUTA do?</b>\nSHUTA allows Staff and Students of your organisation to manage their management tasks online.<b>\n\nHere is an example of what SHUTA can do</b>\n<i><b>-</b>Students</i>\n\tRegister for Courses online\n\tView Course Progress and Results\n\n<i><b>-</b>Teaching Staff</i>\n\tView list of Students per Course Publish Course Results\n\tTrack Students Progress\n\n<i><b>-</b>Other</i>\n\tmany more.</string>
     <string name="code">CODE</string>
     <string name="is_238">IS 238</string>
     <string name="computer_network_design_and_administration">Computer Network Design and Administration</string>
@@ -50,7 +50,14 @@
     <string name="is_274">IS 274</string>
     <string name="principles_of_database_systems">Principles of Database Systems</string>
     <string name="student_id">student ID</string>
-    <string name="todo">TODO</string>
     <string name="shuta">SHUTA</string>
+    <string name="admin">admin</string>
+    <string name="welcome">welcome :</string>
+    <string name="todo">todo</string>
+    <string name="logo">TODO</string>
+    <string name="view_courses">view Courses</string>
+    <string name="view_students">view Students</string>
+    <string name="view_staff_members">view staff members</string>
+    <string name="addcourses">addCourses</string>
 
 </resources>

@@ -92,4 +92,10 @@ public class studentDatabase extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         return db.delete(DATABASE_TABLE, "regno = ?",new String[] {regno});
     }
+
+    public Cursor getProfData(String fname,String sname) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor res = db.rawQuery("select "+col_2+","+col_4+" from "+DATABASE_TABLE,null);
+        return res;
+    }
 }

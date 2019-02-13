@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".student_Courses">
+    tools:context=".StaffCourses">
 
     <TextView
         android:id="@+id/nameOfStudent"
@@ -58,11 +58,11 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:clickable="true"
+        android:focusable="true"
         android:onClick="addCourse"
         android:text="add_course"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:focusable="true" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>
